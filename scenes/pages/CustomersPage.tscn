@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://fhckv0b5saje"]
+
+[node name="CustomersPage" type="Node2D" unique_id=1439780203]
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=341761679]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=387765792]
+layout_mode = 2

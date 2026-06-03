@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="FencingQuoteApp"
+run/main_scene="uid://c6fkplmm1ahkb"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+DatabaseManager="*uid://b7jvtosg5lq2q"
+CustomerService="*uid://kfew32dtjf8n"
 
 [physics]
 

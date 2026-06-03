@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://dgvc2cmx8dm6y"]
 
+[ext_resource type="Script" uid="uid://d0gaxmjn8pbc" path="res://scenes/pages/Dashboard.gd" id="1_r6ef0"]
+
 [node name="Dashboard" type="Control" unique_id=1794076076]
 layout_mode = 3
 anchors_preset = 15
@@ -7,11 +9,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_r6ef0")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1276738324]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="MainLayout" type="VBoxContainer" parent="MarginContainer" unique_id=2034505949]
 layout_mode = 2
@@ -19,24 +25,40 @@ layout_mode = 2
 [node name="TitleLabel" type="Label" parent="MarginContainer/MainLayout" unique_id=770997532]
 layout_mode = 2
 text = "Dashboard"
+horizontal_alignment = 1
 
-[node name="GridContainer" type="GridContainer" parent="MarginContainer/MainLayout" unique_id=1463200411]
+[node name="ModuleGrid" type="GridContainer" parent="MarginContainer/MainLayout" unique_id=1463200411]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+columns = 3
 
-[node name="Button" type="Button" parent="MarginContainer/MainLayout/GridContainer" unique_id=1653759735]
+[node name="CustomersButton" type="Button" parent="MarginContainer/MainLayout/ModuleGrid" unique_id=1653759735]
+custom_minimum_size = Vector2(120, 80)
 layout_mode = 2
+text = "Customers"
 
-[node name="Button2" type="Button" parent="MarginContainer/MainLayout/GridContainer" unique_id=905665527]
+[node name="ProductsButton" type="Button" parent="MarginContainer/MainLayout/ModuleGrid" unique_id=905665527]
+custom_minimum_size = Vector2(120, 80)
 layout_mode = 2
+text = "Products & Services"
 
-[node name="Button3" type="Button" parent="MarginContainer/MainLayout/GridContainer" unique_id=313413316]
+[node name="QuotationsButton" type="Button" parent="MarginContainer/MainLayout/ModuleGrid" unique_id=313413316]
+custom_minimum_size = Vector2(120, 80)
 layout_mode = 2
+text = "Quotations"
 
-[node name="Button4" type="Button" parent="MarginContainer/MainLayout/GridContainer" unique_id=454943444]
+[node name="TemplatesButton" type="Button" parent="MarginContainer/MainLayout/ModuleGrid" unique_id=454943444]
+custom_minimum_size = Vector2(120, 80)
 layout_mode = 2
+text = "Templates"
 
-[node name="Button5" type="Button" parent="MarginContainer/MainLayout/GridContainer" unique_id=1902691073]
+[node name="ReportsButton" type="Button" parent="MarginContainer/MainLayout/ModuleGrid" unique_id=1902691073]
+custom_minimum_size = Vector2(120, 80)
 layout_mode = 2
+text = "Reports"
 
-[node name="Button6" type="Button" parent="MarginContainer/MainLayout/GridContainer" unique_id=224987001]
+[node name="SettingsButton" type="Button" parent="MarginContainer/MainLayout/ModuleGrid" unique_id=224987001]
+custom_minimum_size = Vector2(120, 80)
 layout_mode = 2
+text = "Settings"

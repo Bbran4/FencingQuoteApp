@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="FencingQuoteApp"
-run/main_scene="uid://c6fkplmm1ahkb"
+run/main_scene="uid://dgvc2cmx8dm6y"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

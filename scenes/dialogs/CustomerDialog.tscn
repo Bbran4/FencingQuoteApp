@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://4mvh7dhr6vl1"]
+
+[ext_resource type="Script" uid="uid://bw6vfvva2yqop" path="res://scenes/dialogs/CustomerDialog.gd" id="1_6u4pi"]
+
+[node name="CustomerDialog" type="Window" unique_id=144342139]
+oversampling_override = 1.0
+title = "New Customer"
+initial_position = 1
+size = Vector2i(680, 450)
+visible = false
+popup_window = true
+script = ExtResource("1_6u4pi")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1089873267]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainLayout" type="VBoxContainer" parent="MarginContainer" unique_id=360065367]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/MainLayout" unique_id=1817634232]
+layout_mode = 2
+
+[node name="CompanyInput" type="LineEdit" parent="MarginContainer/MainLayout" unique_id=1555054960]
+layout_mode = 2
+placeholder_text = "Company Name"
+
+[node name="ContactInput" type="LineEdit" parent="MarginContainer/MainLayout" unique_id=1438171893]
+layout_mode = 2
+placeholder_text = "Contact Name"
+
+[node name="PhoneInput" type="LineEdit" parent="MarginContainer/MainLayout" unique_id=1818981052]
+layout_mode = 2
+placeholder_text = "Phone Number"
+
+[node name="EmailInput" type="LineEdit" parent="MarginContainer/MainLayout" unique_id=1616418067]
+layout_mode = 2
+placeholder_text = "Email Address"
+
+[node name="AddressInput" type="LineEdit" parent="MarginContainer/MainLayout" unique_id=1498851301]
+layout_mode = 2
+placeholder_text = "Address"
+
+[node name="ButtonRow" type="HBoxContainer" parent="MarginContainer/MainLayout" unique_id=723812815]
+layout_mode = 2
+
+[node name="SaveButton" type="Button" parent="MarginContainer/MainLayout/ButtonRow" unique_id=571871904]
+layout_mode = 2
+text = "Save"
+
+[node name="CancelButton" type="Button" parent="MarginContainer/MainLayout/ButtonRow" unique_id=21014247]
+layout_mode = 2
+text = "Cancel"

@@ -81,3 +81,28 @@ func update_customer(customer_id: int, data: Dictionary) -> bool:
 	])
 
 	return success
+
+func search_customers(search_text: String) -> Array:
+
+	var query = """
+	SELECT * FROM customers
+	WHERE
+		company_name LIKE ? OR
+		contact_person LIKE ? OR
+		phone LIKE ? OR
+		email LIKE ? OR
+		address LIKE ?
+	ORDER BY company_name ASC;
+	"""
+
+	var pattern = "%" + search_text + "%"
+
+	DatabaseManager.db.query_with_bindings(query, [
+		pattern,
+		pattern,
+		pattern,
+		pattern,
+		pattern
+	])
+
+	return DatabaseManager.db.query_result

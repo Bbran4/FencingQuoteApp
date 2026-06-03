@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dgvc2cmx8dm6y"]
+
+[node name="Dashboard" type="Control" unique_id=1794076076]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1276738324]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MainLayout" type="VBoxContainer" parent="MarginContainer" unique_id=2034505949]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/MainLayout" unique_id=770997532]
+layout_mode = 2
+text = "Dashboard"
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/MainLayout" unique_id=1463200411]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/MainLayout/GridContainer" unique_id=1653759735]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="MarginContainer/MainLayout/GridContainer" unique_id=905665527]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="MarginContainer/MainLayout/GridContainer" unique_id=313413316]
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="MarginContainer/MainLayout/GridContainer" unique_id=454943444]
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="MarginContainer/MainLayout/GridContainer" unique_id=1902691073]
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="MarginContainer/MainLayout/GridContainer" unique_id=224987001]
+layout_mode = 2

@@ -1,8 +1,15 @@
 [gd_scene format=3 uid="uid://fhckv0b5saje"]
 
+[ext_resource type="Script" uid="uid://cqhvv8y6jjspl" path="res://scenes/pages/CustomersPage.gd" id="1_jo07h"]
+
 [node name="CustomersPage" type="Control" unique_id=1369380280]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jo07h")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=719633247]
 layout_mode = 1
@@ -21,26 +28,49 @@ layout_mode = 2
 [node name="TopBarContent" type="HBoxContainer" parent="MarginContainer/MainLayout/TopBar" unique_id=1390763819]
 layout_mode = 2
 
+[node name="BackButton" type="Button" parent="MarginContainer/MainLayout/TopBar/TopBarContent" unique_id=1756958107]
+layout_mode = 2
+text = "Back"
+
 [node name="TitleLabel" type="Label" parent="MarginContainer/MainLayout/TopBar/TopBarContent" unique_id=244001759]
 layout_mode = 2
+size_flags_horizontal = 2
+text = "Customers"
+horizontal_alignment = 1
 
-[node name="AddCustomerButton" type="Button" parent="MarginContainer/MainLayout/TopBar/TopBarContent" unique_id=2044645138]
+[node name="Spacer" type="Control" parent="MarginContainer/MainLayout/TopBar/TopBarContent" unique_id=886243174]
 layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ActionButtons" type="HBoxContainer" parent="MarginContainer/MainLayout/TopBar/TopBarContent" unique_id=337192070]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+alignment = 2
+
+[node name="AddCustomerButton" type="Button" parent="MarginContainer/MainLayout/TopBar/TopBarContent/ActionButtons" unique_id=2044645138]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Add New"
+
+[node name="EditButton" type="Button" parent="MarginContainer/MainLayout/TopBar/TopBarContent/ActionButtons" unique_id=449324157]
+layout_mode = 2
+text = "Edit
+"
+
+[node name="DeleteButton" type="Button" parent="MarginContainer/MainLayout/TopBar/TopBarContent/ActionButtons" unique_id=1172698772]
+layout_mode = 2
+text = "Delete
+"
 
 [node name="SearchInput" type="LineEdit" parent="MarginContainer/MainLayout" unique_id=747111825]
 layout_mode = 2
+placeholder_text = "Search Customer Name"
 
 [node name="CustomerTree" type="Tree" parent="MarginContainer/MainLayout" unique_id=266983273]
 layout_mode = 2
+size_flags_vertical = 3
 columns = 4
+column_titles_visible = true
 hide_root = true
 select_mode = 1
-
-[node name="ActionBar" type="HBoxContainer" parent="MarginContainer/MainLayout" unique_id=337192070]
-layout_mode = 2
-
-[node name="Button" type="Button" parent="MarginContainer/MainLayout/ActionBar" unique_id=449324157]
-layout_mode = 2
-
-[node name="Button2" type="Button" parent="MarginContainer/MainLayout/ActionBar" unique_id=1172698772]
-layout_mode = 2

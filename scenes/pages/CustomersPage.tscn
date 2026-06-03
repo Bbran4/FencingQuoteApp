@@ -1,10 +1,46 @@
 [gd_scene format=3 uid="uid://fhckv0b5saje"]
 
-[node name="CustomersPage" type="Node2D" unique_id=1439780203]
+[node name="CustomersPage" type="Control" unique_id=1369380280]
+layout_mode = 3
+anchors_preset = 0
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=341761679]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=719633247]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=387765792]
+[node name="MainLayout" type="VBoxContainer" parent="MarginContainer" unique_id=158699785]
+layout_mode = 2
+
+[node name="TopBar" type="PanelContainer" parent="MarginContainer/MainLayout" unique_id=1163177581]
+layout_mode = 2
+
+[node name="TopBarContent" type="HBoxContainer" parent="MarginContainer/MainLayout/TopBar" unique_id=1390763819]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/MainLayout/TopBar/TopBarContent" unique_id=244001759]
+layout_mode = 2
+
+[node name="AddCustomerButton" type="Button" parent="MarginContainer/MainLayout/TopBar/TopBarContent" unique_id=2044645138]
+layout_mode = 2
+
+[node name="SearchInput" type="LineEdit" parent="MarginContainer/MainLayout" unique_id=747111825]
+layout_mode = 2
+
+[node name="CustomerTree" type="Tree" parent="MarginContainer/MainLayout" unique_id=266983273]
+layout_mode = 2
+columns = 4
+hide_root = true
+select_mode = 1
+
+[node name="ActionBar" type="HBoxContainer" parent="MarginContainer/MainLayout" unique_id=337192070]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/MainLayout/ActionBar" unique_id=449324157]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="MarginContainer/MainLayout/ActionBar" unique_id=1172698772]
 layout_mode = 2
